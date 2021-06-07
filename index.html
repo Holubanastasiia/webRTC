@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="videos">
+            <video id="gum" playsinline autoplay muted></video>
+            <video id="recorded" class="visibility" playsinline loop></video>
+            <canvas class="visibility" width="400" height="300"></canvas>
+        </div>
+
+        <div class="btns">
+            <button id="start">Start camera</button>
+            <button id="record" disabled>Record</button>
+            <button id="play" disabled>Play</button>
+            <a type="button" id="download">Download</a>
+            <button id="share">Share screen</button>
+            <button id="snapshot" disabled>Take snapshot</button>
+            <div class="filter">
+                <label for="filter">Filter: </label>
+                <select id="filter">
+                    <option value="none">None</option>
+                    <option value="blur">Blur</option>
+                    <option value="grayscale">Grayscale</option>
+                    <option value="invert">Invert</option>
+                    <option value="sepia">Sepia</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
